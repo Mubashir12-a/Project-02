@@ -1,0 +1,960 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Sedan SC", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.red {
+  color: red;
+  font-size: 2em;
+}
+.blue {
+  color: blue;
+  -webkit-text-stroke: 1px blue;
+  font-size: 1em;
+}
+.blue_2 {
+  color: blue;
+  -webkit-text-stroke: 1px blue;
+  font-size: 1.8em;
+}
+.black {
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+}
+.white {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Header--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
+}
+
+header #logo {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header #logo img {
+  height: 90%;
+}
+
+header #logo .logoName {
+  font-size: 3em;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-family: "jokerman";
+}
+
+header ul {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header ul a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: darkblue;
+}
+
+header ul a img {
+  height: 40%;
+  z-index: 1;
+}
+
+header ul a li {
+  font-size: 2em;
+  font-weight: bold;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 0 0 30px;
+  padding: 0 10px 5px 10px;
+  background: orange;
+  transition: all 0.8s;
+}
+
+header ul a:hover li {
+  background: red;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0 10px 0 30px;
+  transition: all 0.8s;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-01--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-01 {
+  height: 300px;
+  width: 100%;
+  background-color: orange;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 0;
+}
+
+#section-01::after {
+  position: absolute;
+  content: "";
+  height: 250px;
+  width: 120%;
+  background-color: orange;
+  top: 180px;
+  left: -100px;
+  right: 0;
+  transform: rotate(10deg);
+  z-index: -5;
+}
+
+#section-01 img {
+  height: 350px;
+  margin-top: 110px;
+  z-index: -3;
+}
+
+#section-01 div {
+  margin-right: 5%;
+  width: 700px;
+  height: 300px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#section-01 div h2:nth-child(1) {
+  font-size: 4em;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+#section-01 div h2:nth-child(2) {
+  font-size: 3em;
+  font-weight: 600;
+  color: slategrey;
+}
+
+#section-01 div p {
+  font-size: 2em;
+}
+
+#section-01 div button {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(66, 136, 179);
+}
+
+#section-01 div button a {
+  font-size: 2em;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-02--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-02 {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(60, 120, 230);
+  margin-top: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#section-02::before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 120%;
+  background-color: rgb(60, 120, 230);
+  transform: rotate(10deg);
+  top: -110px;
+  left: -50px;
+  z-index: 1;
+}
+
+#section-02::after {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 120%;
+  background-color: rgb(60, 120, 230);
+  transform: rotate(-10deg);
+  top: 160px;
+  left: -50px;
+  z-index: -2;
+}
+
+#section-02 div:nth-child(1) {
+  /* height: 400px; */
+  width: 600px;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+#section-02 div:nth-child(1) h2 {
+  font-size: 4em;
+  font-weight: 900;
+  color: red;
+}
+
+#section-02 div:nth-child(1) pre {
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+}
+
+#section-02 div:nth-child(1) p {
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+#section-02 div:nth-child(1) button {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  align-self: flex-end;
+  margin: 20px 50px 0 0;
+}
+
+#section-02 div:nth-child(1) button a {
+  font-size: 2em;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+#section-02 div:nth-child(2) {
+  height: 350px;
+  width: 350px;
+  background-color: red;
+  z-index: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#section-02 div:nth-child(2) img {
+  height: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-03--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-03 {
+  height: 400px;
+  width: 100%;
+  background-color: red;
+  margin-top: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#section-03::after {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 120%;
+  background-color: red;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -50px;
+  z-index: -3;
+}
+
+#section-03 #text {
+  height: 100px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -10px;
+}
+
+#section-03 #text h2 {
+  font-size: 5.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#section-03 #text h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: black;
+}
+
+#section-03 #products {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 80%;
+  margin-top: 150px;
+  z-index: 2;
+  position: absolute;
+  bottom: -70px;
+}
+
+#section-03 #products .cards {
+  height: 90%;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.557);
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+#section-03 #products .cards img {
+  height: 60%;
+  width: 90%;
+  border-radius: 20px;
+}
+
+#section-03 #products .cards span {
+  position: absolute;
+  height: 162px;
+  width: 180px;
+  top: 5px;
+  left: 9px;
+  border-radius: 20px;
+  opacity: 1;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+#section-03 #products .cards span img {
+  height: 100%;
+  width: 180px;
+  transition: 0.5s;
+}
+
+#section-03 #products .cards:nth-child(odd):hover span img {
+  transform: translate(10px, -30px) scale(1.3);
+  transition: 0.5s;
+}
+
+#section-03 #products .cards:nth-child(even):hover span img {
+  transform: translate(10px, -30px) scale(1.8);
+  transition: 0.5s;
+}
+
+#section-03 #products .cards:hover span {
+  background-color: rgba(255, 255, 255, 0.175);
+  backdrop-filter: blur(6px);
+  transition: 0.5s;
+}
+
+#section-03 #products .cards div {
+  background-color: black;
+  width: 90%;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+}
+
+#section-03 #products .cards div h3 {
+  font-size: 2.2em;
+}
+
+#section-03 #products .cards div h4 a {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+}
+
+#section-03 #products .cards div h4 a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-04--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-04 {
+  background-color: orange;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#section-04 h2 {
+  font-size: 5em;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+#section-04 .container {
+  background: url("Images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 70%;
+  position: absolute;
+  bottom: -150px;
+  display: flex;
+}
+
+#section-04 .container div:nth-child(1) {
+  height: 100%;
+  width: 70%;
+  background-color: transparent;
+}
+
+#section-04 .container div:nth-child(1) img {
+  height: 100%;
+}
+
+#section-04 .container div:nth-child(2) {
+  height: 100%;
+  width: 30%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-04 .container div:nth-child(2) img {
+  height: 100%;
+}
+
+#section-04 .container div:nth-child(2) .text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-04 .container div:nth-child(2) .text h3 {
+  background-color: rgba(0, 0, 0, 0.667);
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#section-04 .container div:nth-child(2) .text h3 a {
+  color: orange;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-05--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-05 {
+  background-color: ghostwhite;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-05 .text {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-05 .text h2 {
+  font-size: 5em;
+  font-weight: bolder;
+  color: rgb(0, 94, 255);
+  letter-spacing: 2px;
+  margin-top: -40px;
+}
+
+#section-05 .text p {
+  font-size: 2em;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+#section-05 .NewLaunch {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+#section-05 .NewLaunch .card {
+  height: 300px;
+  width: 200px;
+  background-color: orange;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+#section-05 .NewLaunch .card img {
+  height: 65%;
+}
+
+#section-05 .NewLaunch .card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 35%;
+}
+
+#section-05 .NewLaunch .card div h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: darkblue;
+}
+
+#section-05 .NewLaunch .card div button {
+  height: 20px;
+  background-color: black;
+}
+
+#section-05 .NewLaunch .card div button a {
+  color: red;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-06--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-06 {
+  height: 500px;
+  background: url("Images/contactBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#section-06::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.393);
+  backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+}
+
+#section-06 .text {
+  width: 60%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+#section-06 .text h2 {
+  font-size: 6em;
+  font-weight: bolder;
+}
+
+#section-06 .text p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#section-06 .text .icons {
+  height: 80px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#section-06 .text .icons img {
+  height: 80%;
+}
+
+#section-06 .img {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+#section-06 .img img {
+  height: 80%;
+  align-self: flex-end;
+  z-index: 1;
+  position: relative;
+}
+
+#section-06 .img span {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  top: 100px;
+  left: -10px;
+  z-index: 2;
+  background-color: black;
+  clip-path: polygon(80% 0, 80% 50%, 98% 60%, 59% 51%, 0 50%, 0 0);
+  border-radius: 5px;
+  padding: 10px;
+  opacity: 1;
+}
+
+#section-06 .img span h2:nth-child(1) {
+  font-size: 3em;
+  font-weight: bold;
+  color: gold;
+}
+
+#section-06 .img span h2:nth-child(2) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: gold;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-07--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-07 {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(255, 106, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#section-07 img {
+  height: 100%;
+}
+
+#section-07 .mailBox {
+  height: 300px;
+  width: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+#section-07 .mailBox h2 {
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+#section-07 .mailBox p {
+  font-size: 2em;
+  padding: 0 10%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+#section-07 .mailBox input {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-bottom: 3px solid red;
+  margin-bottom: 20px;
+  background-color: transparent;
+  outline: none;
+  font-size: 2em;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#section-07 .mailBox ::placeholder {
+  text-align: center;
+  color: white;
+}
+
+#section-07 .mailBox button {
+  margin-bottom: 50px;
+  width: 20%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid red;
+  background-color: red;
+  box-shadow: 5px 5px 10px rgb(180, 65, 65);
+}
+
+#section-07 .mailBox button a {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------Section-08--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+#section-08 {
+  height: 600px;
+  width: 100%;
+  background: #008dda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#section-08 h2 {
+  font-size: 5em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  color: white;
+}
+
+#section-08 div {
+  background-color: goldenrod;
+  display: flex;
+  width: 70%;
+  height: 400px;
+}
+
+#section-08 div .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#section-08 div .message h3 {
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+
+#section-08 div .message input[type="text"],
+[type="email"] {
+  width: 70%;
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 2.5em;
+  outline: none;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#section-08 div .message input::placeholder {
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-family: "Courier New", Courier, monospace, Helvetica, sans-serif;
+}
+
+#section-08 div .message button {
+  width: 20%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  box-shadow: 3px 3px 10px rgb(180, 65, 65);
+}
+
+#section-08 div .message button a {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#section-08 div .message p {
+  font-size: 2em;
+  padding: 15px;
+}
+
+#section-08 div .message p input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+#section-08 div .message p a {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------footer--------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------- */
+
+footer {
+  height: 500px;
+  width: 100%;
+  background-color: #131313;
+}
+
+footer div:nth-child(1) {
+  display: flex;
+  width: 50%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+footer div:nth-child(1) img {
+  height: 100%;
+}
+
+footer div:nth-child(1) h2 {
+  font-size: 5em;
+  font-family: "jokerman", Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+footer div:nth-child(2) {
+  width: 70%;
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer div:nth-child(2) ol {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+footer div:nth-child(2) ol li a {
+  font-size: 2.5em;
+  color: white;
+  text-decoration: underline;
+}
+
+footer div:nth-child(2) ol li a:hover {
+  color: red;
+}
+
+footer p {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 10px;
+  word-spacing: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.FooterName {
+  color: red;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------*/
